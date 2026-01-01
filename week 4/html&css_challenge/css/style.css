@@ -1,0 +1,67 @@
+/* LAB LEVEL 2: CSS3 FUNDAMENTALS (NO FRAMEWORK)          */
+/* Global stylesheet, box model, typography, flexbox     */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+}
+
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem;
+}
+
+/* LAB LEVEL 9: UX & POLISH – Sticky Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+main {
+  padding: 2rem;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+}
+
+/* LAB LEVEL 3: Custom CSS along with Bootstrap */
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* LAB LEVEL 4: Dashboard hierarchy */
+details {
+  margin-left: 1rem;
+}
+
+/* LAB LEVEL 7: Gallery hover effects */
+.gallery-img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* LAB LEVEL 5: Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+/* LAB LEVEL 9: Dark Mode */
+body.dark {
+  background-color: #0f172a;
+  color: white;
+}
