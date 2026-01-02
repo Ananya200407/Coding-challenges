@@ -1,0 +1,24 @@
+/* ================= LAB 8: Normalize CSS ================= */
+
+/* Document */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections */
+body {
+  margin: 0;
+}
+
+/* Typography */
+h1, h2 {
+  margin: 0.67em 0;
+}
+
+/* Forms */
+button {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}

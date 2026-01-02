@@ -1,0 +1,23 @@
+/* ================= LAB 7: Gallery Hover Effects ================= */
+
+.gallery-item {
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover effect */
+.gallery-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image caption */
+.caption {
+  margin-top: 8px;
+  font-weight: 500;
+}

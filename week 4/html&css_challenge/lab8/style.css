@@ -1,0 +1,38 @@
+/* ================= LAB 8: Vendor Prefixes ================= */
+
+/* Layout */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Vendor prefixes for border-radius */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #e5e7eb;
+
+  -webkit-border-radius: 10px; /* Safari, old Chrome */
+  -moz-border-radius: 10px;    /* Old Firefox */
+  border-radius: 10px;         /* Standard */
+
+  margin-top: 20px;
+}
+
+/* Vendor prefixes for transition */
+button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover test */
+button:hover {
+  background-color: #1d4ed8;
+}

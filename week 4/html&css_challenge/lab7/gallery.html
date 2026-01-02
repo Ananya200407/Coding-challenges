@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 7 – Gallery Module</title>
+
+  <!-- Bootstrap (Allowed for Lab 7) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for hover effects -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container mt-5">
+
+    <h2 class="text-center mb-4">Photo Gallery</h2>
+
+    <!-- Lab 7: Grid Layout -->
+    <div class="row g-4">
+
+      <!-- Image Card 1 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+             onclick="openImage('https://via.placeholder.com/600','Project 1')">
+          <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 1">
+          <p class="caption">Project 1</p>
+        </div>
+      </div>
+
+      <!-- Image Card 2 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+             onclick="openImage('https://via.placeholder.com/600','Project 2')">
+          <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 2">
+          <p class="caption">Project 2</p>
+        </div>
+      </div>
+
+      <!-- Image Card 3 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+             onclick="openImage('https://via.placeholder.com/600','Project 3')">
+          <img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 3">
+          <p class="caption">Project 3</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lab 7: Optional Modal Preview -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img id="modalImage" class="img-fluid mb-2">
+          <p id="modalCaption"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (for modal) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    /* Lab 7: Modal preview logic */
+    function openImage(src, caption) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("modalCaption").innerText = caption;
+    }
+  </script>
+
+</body>
+</html>

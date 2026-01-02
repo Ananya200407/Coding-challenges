@@ -1,0 +1,25 @@
+/* ================= LAB 6: Custom Layout Refinements ================= */
+
+body {
+  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile card layout */
+.profile-card {
+  max-width: 480px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2563eb;
+}
